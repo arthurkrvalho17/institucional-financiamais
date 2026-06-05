@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Conformidade com a LGPD — FINANCIA+</title>
+<meta name="description" content="Como a FINANCIA+ trata dados pessoais em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018)."/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blue:#185FA5;--blue-lt:#E8F2FB;--blue-dk:#0C447C;--blue-mid:#1A72C2;
+  --navy:#0A1628;--white:#fff;--off:#F7F9FC;
+  --text:#0D1B2A;--muted:#64748B;--border:#E2E8F0;
+}
+html{scroll-behavior:smooth}
+body{
+  background:var(--white);color:var(--text);
+  font-family:'Inter',sans-serif;font-size:16px;line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  padding:0 64px;height:68px;
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(255,255,255,.97);backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo-icon{
+  width:36px;height:36px;border-radius:9px;background:var(--navy);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Inter',sans-serif;font-weight:800;font-size:13px;color:var(--blue-mid);
+}
+.nav-logo-text{font-family:'Inter',sans-serif;font-weight:800;font-size:19px;color:var(--text)}
+.nav-logo-text span{color:var(--blue)}
+.nav-back{
+  font-size:14px;color:var(--muted);text-decoration:none;font-weight:500;
+  transition:color .2s;
+}
+.nav-back:hover{color:var(--text)}
+
+.page-header{
+  padding:140px 64px 60px;background:var(--off);
+  border-bottom:1px solid var(--border);
+}
+.ph-in{max-width:880px;margin:0 auto}
+.ph-bread{
+  font-size:12px;color:var(--muted);margin-bottom:18px;letter-spacing:.06em;
+}
+.ph-bread a{color:var(--blue);text-decoration:none}
+.ph-bread a:hover{text-decoration:underline}
+.ph-title{
+  font-family:'Inter',sans-serif;font-weight:800;
+  font-size:clamp(32px,3.6vw,44px);letter-spacing:-0.02em;
+  line-height:1.2;color:var(--text);margin-bottom:12px;
+}
+.ph-subtitle{
+  font-size:14px;color:var(--blue);font-weight:600;margin-bottom:14px;
+  letter-spacing:.02em;
+}
+.ph-intro{font-size:16px;color:var(--muted);line-height:1.6}
+
+.content{padding:80px 64px;background:var(--white)}
+.content-in{max-width:880px;margin:0 auto}
+.content h2{
+  font-family:'Inter',sans-serif;font-weight:700;font-size:24px;
+  color:var(--text);margin-top:48px;margin-bottom:18px;
+  padding-top:24px;border-top:1px solid var(--border);
+}
+.content h2:first-of-type{margin-top:0;padding-top:0;border-top:none}
+.content h3{
+  font-family:'Inter',sans-serif;font-weight:700;font-size:16px;
+  color:var(--text);margin-top:22px;margin-bottom:8px;
+}
+.content p{font-size:15px;color:var(--text);line-height:1.85;margin-bottom:16px}
+.content p strong{font-weight:500;color:var(--text)}
+.content ul,.content ol{padding-left:22px;margin-bottom:18px}
+.content li{font-size:15px;color:var(--text);line-height:1.85;margin-bottom:8px}
+.content a{color:var(--blue);text-decoration:underline}
+.content a:hover{color:var(--blue-dk)}
+
+.related-docs{margin-top:48px;padding-top:32px;border-top:1px solid var(--border)}
+.related-docs h4{
+  font-size:11px;color:var(--muted);text-transform:uppercase;
+  letter-spacing:.12em;font-weight:500;margin-bottom:14px;
+}
+.rd-links{display:flex;gap:12px;flex-wrap:wrap}
+.rd-link{
+  background:var(--off);border:1px solid var(--border);
+  padding:10px 18px;border-radius:8px;
+  font-size:13px;color:var(--text);text-decoration:none;
+  font-weight:500;transition:all .2s;
+}
+.rd-link:hover{border-color:var(--blue);color:var(--blue)}
+
+footer{background:var(--navy);padding:40px 64px;border-top:1px solid rgba(255,255,255,.06)}
+.footer-bot{
+  max-width:1180px;margin:0 auto;
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:12px;
+}
+.footer-bot p{font-size:12px;color:rgba(255,255,255,.4)}
+.footer-bot a{color:rgba(255,255,255,.5);text-decoration:none}
+.footer-bot a:hover{color:#fff}
+
+@media(max-width:900px){
+  nav{padding:0 24px}
+  .page-header{padding:108px 24px 48px}
+  .content{padding:60px 24px}
+  footer{padding:32px 24px}
+  .footer-bot{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">F+</div>
+    <div class="nav-logo-text">FINANCIA<span>+</span></div>
+  </a>
+  <a href="index.html" class="nav-back">← Voltar para a home</a>
+</nav>
+
+<div class="page-header">
+  <div class="ph-in">
+    <div class="ph-bread"><a href="index.html">Home</a> &nbsp;/&nbsp; Conformidade LGPD</div>
+    <h1 class="ph-title">Conformidade com a LGPD</h1>
+    <p class="ph-subtitle">Lei Geral de Proteção de Dados — Lei nº 13.709/2018</p>
+    <p class="ph-intro">A FINANCIA+ está comprometida com a proteção dos seus dados pessoais. Esta página detalha como tratamos seus dados em conformidade com a LGPD.</p>
+  </div>
+</div>
+
+<div class="content">
+  <div class="content-in">
+
+<h2>O que é a LGPD?</h2>
+<p>A Lei Geral de Proteção de Dados Pessoais (LGPD) é a legislação brasileira que regulamenta o tratamento de dados pessoais por pessoas físicas e jurídicas, com o objetivo de proteger os direitos fundamentais de liberdade e de privacidade dos titulares de dados. A lei entrou em vigor em setembro de 2020 e suas sanções em agosto de 2021.</p>
+
+<h2>Controlador dos Dados</h2>
+<p><strong>Empresa:</strong> FINANCIA+<br/>
+<strong>Website:</strong> financiasmais.com<br/>
+<strong>E-mail do DPO:</strong> contato@financiasmais.com<br/>
+<strong>Localização:</strong> Brasília, Distrito Federal, Brasil</p>
+
+<h2>Dados que Coletamos</h2>
+
+<h3>Dados de Identificação</h3>
+<p><strong>Dados:</strong> Nome completo, CPF/CNPJ, data de nascimento, gênero<br/>
+<strong>Finalidade:</strong> Cadastro na plataforma e simulação de financiamento junto a bancos parceiros.</p>
+
+<h3>Dados de Contato</h3>
+<p><strong>Dados:</strong> E-mail, telefone, estado, cidade<br/>
+<strong>Finalidade:</strong> Comunicação sobre propostas, suporte técnico e notificações do sistema.</p>
+
+<h3>Dados Veiculares</h3>
+<p><strong>Dados:</strong> Placa, marca, modelo, ano, versão e valor do veículo<br/>
+<strong>Finalidade:</strong> Simulação de financiamento veicular.</p>
+
+<h3>Dados de Navegação</h3>
+<p><strong>Dados:</strong> IP, cookies, páginas visitadas, tempo de permanência<br/>
+<strong>Finalidade:</strong> Análise de uso, melhorias na plataforma e segurança.</p>
+
+<h3>Dados de Pagamento</h3>
+<p><strong>Dados:</strong> Informações processadas via gateway certificado PCI-DSS (não armazenamos dados de cartão)<br/>
+<strong>Finalidade:</strong> Cobrança dos planos de assinatura.</p>
+
+<h2>Bases Legais para o Tratamento</h2>
+
+<h3>Consentimento (Art. 7º, I)</h3>
+<p>Para cookies de análise e marketing, e envio de comunicações promocionais.</p>
+
+<h3>Execução de contrato (Art. 7º, V)</h3>
+<p>Para a prestação dos serviços contratados, incluindo a simulação de financiamento multibanco e a gestão de cadastros.</p>
+
+<h3>Legítimo interesse (Art. 7º, IX)</h3>
+<p>Para melhorias na plataforma, segurança e prevenção a fraudes.</p>
+
+<h3>Obrigação legal (Art. 7º, II)</h3>
+<p>Para cumprimento de obrigações fiscais e regulatórias.</p>
+
+<h2>Seus Direitos como Titular</h2>
+<p>Conforme os artigos 17 a 22 da LGPD, você tem os seguintes direitos:</p>
+
+<h3>Acesso aos dados</h3>
+<p>Você pode solicitar uma cópia de todos os dados pessoais que temos sobre você.</p>
+
+<h3>Correção de dados</h3>
+<p>Dados incompletos, inexatos ou desatualizados podem ser corrigidos a qualquer momento.</p>
+
+<h3>Anonimização ou exclusão</h3>
+<p>Dados desnecessários, excessivos ou tratados em desconformidade podem ser anonimizados ou excluídos.</p>
+
+<h3>Portabilidade</h3>
+<p>Você pode solicitar a transferência dos seus dados pessoais para outro fornecedor de serviço.</p>
+
+<h3>Revogação do consentimento</h3>
+<p>O consentimento pode ser revogado a qualquer momento, sem prejuízo do tratamento realizado anteriormente.</p>
+
+<h3>Informação sobre compartilhamento</h3>
+<p>Você pode saber com quais entidades públicas ou privadas compartilhamos seus dados.</p>
+
+<h2>Compartilhamento de Dados</h2>
+<p>Seus dados podem ser compartilhados com:</p>
+<ul>
+  <li>Instituições financeiras parceiras — exclusivamente para simulação de financiamento (Banco Pan, BV, C6 Bank, Omni, Santander, Safra, Daycoval e outros).</li>
+  <li>Processador de pagamentos — gateway certificado PCI-DSS, para cobrança de assinaturas.</li>
+  <li>Google Analytics — para análise de tráfego (mediante seu consentimento).</li>
+  <li>Autoridades competentes — quando exigido por lei ou decisão judicial.</li>
+</ul>
+
+<h2>Segurança dos Dados</h2>
+<p>Adotamos medidas técnicas e organizacionais para proteger seus dados, incluindo: criptografia em trânsito (TLS/SSL), isolamento multi-tenant (cada loja acessa apenas seus próprios dados), backups periódicos, controle de acesso baseado em função, e monitoramento contínuo de segurança. O armazenamento é realizado em servidores seguros com infraestrutura de nível empresarial.</p>
+
+<h2>Política de Cookies</h2>
+<p>Utilizamos três categorias de cookies:</p>
+
+<h3>Necessários</h3>
+<p>Essenciais para o funcionamento do site. Sempre ativos.</p>
+
+<h3>Análise</h3>
+<p>Google Analytics para estatísticas de uso. Requerem consentimento.</p>
+
+<h3>Marketing</h3>
+<p>Anúncios personalizados. Requerem consentimento.</p>
+
+<p>Você pode gerenciar suas preferências de cookies a qualquer momento através do banner exibido no site.</p>
+
+<h2>Menores de Idade</h2>
+<p>Nossos serviços são destinados exclusivamente a pessoas maiores de 18 anos, conforme o Art. 14 da LGPD. Não coletamos intencionalmente dados pessoais de menores de idade. Caso tenhamos conhecimento de que dados de um menor foram coletados, tomaremos medidas para excluí-los prontamente.</p>
+
+<h2>Como Exercer Seus Direitos</h2>
+<p>Para exercer qualquer um dos seus direitos previstos na LGPD, entre em contato com nosso Encarregado de Proteção de Dados (DPO) pelo e-mail contato@financiasmais.com. Responderemos sua solicitação no prazo de até 15 dias úteis, conforme previsto na legislação.</p>
+
+<div class="related-docs">
+  <h4>Documentos relacionados</h4>
+  <div class="rd-links">
+    <a href="politica-de-privacidade.html" class="rd-link">Política de Privacidade →</a>
+    <a href="termos-de-uso.html" class="rd-link">Termos de Uso →</a>
+    <a href="index.html" class="rd-link">Voltar para a página inicial →</a>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-bot">
+    <p>© 2026 FINANCIA+ — financiasmais.com — Todos os direitos reservados.</p>
+    <p>FINANCIA MAIS VEICULOS LTDA · CNPJ 66.146.269/0001-99 · Brasília, DF</p>
+  </div>
+</footer>
+
+</body>
+</html>
